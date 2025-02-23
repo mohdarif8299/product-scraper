@@ -176,3 +176,88 @@ body {
 .view-original-link:hover {
   text-decoration: underline;
 }
+
+/* Product Skeleton styles */
+.product-skeleton {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skeleton-image {
+  padding-bottom: 100%;
+  background-color: #e0e0e0;
+}
+
+.skeleton-content {
+  padding: 15px;
+}
+
+.skeleton-title,
+.skeleton-category,
+.skeleton-price,
+.skeleton-description,
+.skeleton-button,
+.skeleton-link {
+  background-color: #e0e0e0;
+  height: 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.skeleton-title {
+  width: 80%;
+}
+
+.skeleton-category {
+  width: 60%;
+}
+
+.skeleton-price {
+  width: 40%;
+}
+
+.skeleton-description {
+  width: 100%;
+}
+
+.skeleton-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.skeleton-action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.skeleton-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.skeleton-link {
+  width: 30%;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.product-skeleton * {
+  animation: pulse 1.5s infinite;
+}

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { debounce } from "lodash"
 import ProductCard from "./ProductCard"
+import ProductSkeleton from "./ProductSkeleton"
 
 const ProductList = () => {
     const [products, setProducts] = useState([])
@@ -146,7 +147,11 @@ const ProductList = () => {
             {error && <div className="error-message">{error}</div>}
 
             {loading ? (
-                <p> Loading Products...</p>
+                <div className="product-grid">
+                    {[...Array(8)].map((_, index) => (
+                        <ProductSkeleton key={index} />
+                    ))}
+                </div>
             ) : filteredProducts.length > 0 ? (
                 <div className="product-grid">
                     {filteredProducts.map((product) => (
