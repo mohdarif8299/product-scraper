@@ -101,3 +101,12 @@ The frontend should now be running and accessible at `http://localhost:3000` (or
 - Make sure both the backend and frontend are running for full functionality.
 - Configure your database settings in `config/database.yml` if needed.
 - Adjust the `config/redis.yml` and Sidekiq configuration as necessary for your environment.
+
+## Samples 
+
+<img width="1680" alt="Screenshot 2025-02-24 at 1 41 53 AM" src="https://github.com/user-attachments/assets/4d0a21ac-0b81-4742-b65c-aedf69e28096" />
+
+
+<img width="1531" alt="Screenshot 2025-02-24 at 1 42 34 AM" src="https://github.com/user-attachments/assets/370b20df-ef84-414b-ab82-9ac8a0e9cec3" />
+
+
