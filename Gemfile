@@ -21,7 +21,8 @@ gem "solid_queue"
 gem "solid_cable"
 
 gem 'mechanize'
-
+gem 'sidekiq'
+gem 'sidekiq-cron'
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 

@@ -1,0 +1,4 @@
+check_outdated_products:
+  cron: "0 0 * * *"
+  class: 'ProductUpdateCheckerWorker'
+  queue: default

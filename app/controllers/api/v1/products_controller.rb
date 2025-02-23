@@ -6,6 +6,9 @@ module Api
   
         def index
           products = fetch_products
+          
+          products.each(&:schedule_update)
+
           render json: products.as_json(include: :category)
         end
   
